@@ -1,0 +1,15 @@
+---
+layout: category
+---
+
+<div class="extra-pagination inner">
+    {% include pagination.html %}
+</div>
+
+{% for post in paginator.posts %}
+
+    {% include post_preview.html %}
+
+{% endfor %}
+
+{% include pagination.html %}

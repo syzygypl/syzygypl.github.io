@@ -1,0 +1,27 @@
+<article class="post">
+    <header class="post-header">
+        <h2 class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+    </header>
+    <section class="post-excerpt">
+        {{ post.excerpt }} <a class="read-more" href="{{ post.url }}">&raquo;</a>
+    </section>
+    <footer class="post-meta">
+        {% assign authorKey = post.author|default: site.default_author %}
+        {% assign author = site.authors[authorKey] %}
+        {% if author %}
+            <img class="author-thumb" src="/assets/images/{{ author.photo }}.jpg" alt=""/>
+            {{ author.name }}
+        {% endif %}
+
+        {% if post.categories.size > 0 and page.tag == nil %}
+            {% assign category = post.categories | first %}
+            {% for catPage in site.category %}{% if catPage.url contains category %}
+            • <span class="tag"><a href="{{ catPage.url }}">{{ catPage.title }}</a></span>
+            {% endif %}{% endfor %}
+        {% endif %}
+
+        <time class="post-date" datetime="{{ post.date | date:'%Y-%m-%d' }}">
+            {{ post.date | date_to_string }}
+        </time>
+    </footer>
+</article>

@@ -1,0 +1,47 @@
+title: it.szg.io
+authors:
+  puck:
+    photo: maciej-lebkowski
+    name: Maciej Łebkowski
+    bio: Head of Technology team at Syzygy
+
+default_author: puck
+
+email: maciej.lebkowski@syzygy.pl
+description: What’s happening at SYZYGY’s IT?
+baseurl: ""
+url: "https://it.szg.io"
+domain_name: 'https://it.szg.io'
+
+permalink: :categories/:year/:month/:day/:title/
+name: it.szg.io
+
+logo: false
+paginate: 15
+google_analytics: 'UA-XXXXXXXX-X'
+
+# Build settings
+markdown: kramdown
+theme: minima
+highlighter: pygments
+plugins:
+#  - github-pages
+#  - jekyll-feed
+#  - jekyll-paginate
+exclude:
+  - Gemfile
+  - Gemfile.lock
+
+collections:
+  category:
+    output: true
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: category
+    values:
+      layout: "category"
+
+exclude: [vendor]

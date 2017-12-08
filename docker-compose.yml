@@ -1,0 +1,15 @@
+version: "3"
+services:
+    www:
+        image: bretfisher/jekyll-serve
+        working_dir: /site
+        expose:
+          - 4000
+        volumes:
+            - ./:/site
+
+networks:
+    default:
+        external:
+            name: szg_default
+

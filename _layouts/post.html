@@ -1,0 +1,73 @@
+---
+layout: default
+disqus: false
+post_class: post-template
+---
+
+<header class="main-header post-head no-cover">
+    <nav class="main-nav clearfix">
+        <a class="back-button icon-arrow-left" href="{{ '/' | prepend: site.baseurl }}">Home</a>
+        <a class="subscribe-button icon-feed" href="{{ '/feed.xml' | prepend: site.baseurl }}">Subscribe</a>
+    </nav>
+</header>
+
+<main class="content" role="main">
+
+    <article class="post">
+
+        <header class="post-header">
+            <h1 class="post-title">{{ page.title }}</h1>
+            <section class="post-meta">
+                <time class="post-date" datetime="{{ page.date | date:'%Y-%m-%d' }}">{{ page.date | date_to_string }}</time>
+                {% if page.categories.size > 0 %}
+                    {% assign category = page.categories | first %}
+                    {% for catPage in site.category %}{% if catPage.url contains category %}
+                    • <span class="tag"><a href="{{ catPage.url }}">{{ catPage.title }}</a></span>
+                    {% endif %}{% endfor %}
+                {% endif %}
+            </section>
+        </header>
+
+        <section class="post-content">
+            {{content}}
+        </section>
+
+        <footer class="post-footer">
+            <!-- If we want to display author's name and bio -->
+            {% assign authorKey = page.author|default: site.default_author %}
+            {% assign author = site.authors[authorKey] %}
+            {% if author %}
+                <figure class="author-image">
+                    <span class="img" style="background-image: url('/assets/images/{{ author.photo }}.jpg')"></span>
+                </figure>
+                <section class="author">
+                    <h4> {{ author.name }} </h4>
+                    <p>
+                        {{ author.bio }}
+                    </p>
+                </section>
+            {% endif %}
+
+            <!-- Disqus comments -->
+            {% if page.disqus %}
+                {% include disqus.html %}
+            {% endif %}
+        </footer>
+
+        {% assign firstCategory = page.categories | first %}
+        {% assign archive = site.categories[firstCategory] %}
+
+        {% if archive.size > 1 %}
+        <section class="archive">
+            <h5>Related</h5>
+            <ul>
+                {% for related in archive %}{% unless page.url == related.url %}
+                <li><span>{{ related.date | date_to_string }}</span> • <a href="{{ related.url }}">{{ related.title }}</a></li>
+                {% endunless %}{% endfor %}
+            </ul>
+        </section>
+        {% endif %}
+
+    </article>
+
+</main>
