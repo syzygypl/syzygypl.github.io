@@ -23,11 +23,7 @@ google_analytics: 'UA-XXXXXXXX-X'
 # Build settings
 markdown: kramdown
 theme: minima
-highlighter: pygments
-plugins:
-#  - github-pages
-#  - jekyll-feed
-#  - jekyll-paginate
+highlighter: rouge
 exclude:
   - Gemfile
   - Gemfile.lock
