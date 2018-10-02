@@ -8,10 +8,11 @@ author: frost-fox
 
 **Side note**: this article is written for people which are interested in TDD and software design. It assumes that 
 a reader is familiar with such terms as **TDD Schools**, **Software Architecture**. If you are not confident about 
-**Software Architecture** then there is comprehensive set of information about it: 
-[link](https://github.com/testdouble/contributing-tests/wiki). Software architecture is very wide term, if you want 
-to dive in it, my suggestion is book "Clean Architecture" by **Uncle Bob** and its essence in 
-[this article](https://medium.com/gdplabs/clean-architecture-a8b5d93d0944).
+**Software Architecture** then 
+[there is comprehensive set of information about it link](https://github.com/testdouble/contributing-tests/wiki). 
+Software architecture is very wide term, if you want to dive in it, my suggestion 
+[is book "Clean Architecture"](https://www.amazon.com/Clean-Architecture-Craftsmans-Software-Structure/dp/0134494164)
+by **Uncle Bob** and [its essence in this article](https://medium.com/gdplabs/clean-architecture-a8b5d93d0944).
 
 Much has happened since **Test Driven Development** methodology was coined by Kent Beck. This practice is 
 comprehensive and as it always happens in programming was understood and implemented in various different ways. 
@@ -39,9 +40,13 @@ and then gradually move **down** to domain and infrastructure layer, implementin
 
 ![classical-vs-mockist](/assets/content/tdd-revealed/classical-vs-mockist.png)
  
-Main advantages of Classical approach is domain enrichment with great object oriented design, and enhancement of DDD 
-practice. Mockism makes development more focused in terms of result, decreasing probability of creating useless 
-functionality, and therefore not breaking **YAGNI**.
+From the first look it makes no difference whether to start from domain or application layer, however entry point
+significantly changes your implementation. For developer that practicing TDD starting his job is associated with 
+defining expectation for specific feature. In case of Classical approach developers begins with thinking about feature 
+in domain point of view. The result of this is domain enrichment, great object oriented design, and enhancement of DDD
+practice. Mockists on the other hand think about task in terms of application and end result that is noticeable for 
+business and users. They know how exactly their result should look like, and then go down creating only needed 
+implementation, and therefore not breaking **YAGNI**.
 
 #### Another point of view
 
@@ -71,11 +76,11 @@ Every higher level component is coupled to component beneath it - application to
 
 This type of coupling is very dangerous because we constantly creating dependencies from important 
 logic to technical details. A Great example is domain layer, because of natural flow of control we introduce coupling
-to infrastructure - database, messaging bus, filesystem, which is undesirable for our application. What the difference 
-for business rules if database will be relational or document? In good application there is no difference. Domain 
-should not know  anything about it, to give us possibility to easily change for example database implementation or any 
-other internals. It will give us options to choose in future, and make application more reliable, modular and therefore 
-easier to maintain.
+to infrastructure - database, messaging bus, filesystem, which is undesirable for our application. How database 
+implementation should affect business rules? In good application there is no difference. Domain should not know anything 
+about it, to give us possibility to easily change for example database implementation or any other internals. It will 
+give us the possibility to delay the choice as far into the future as possible, and make application more reliable, 
+modular and therefore easier to maintain.
 
 ##### Dependency inversion
 
@@ -85,15 +90,15 @@ between higher lever and lower level component, which is shown on picture.
 
 ![dependency-inversion](/assets/content/tdd-revealed/dependency-inversion.png)
 
-There is main advantage of this solution: the repository is not more coupled concrete database rather it defines 
-interface that database should conform - we can easily swap this database, we have freedom to choose any we want.
+There is main advantage of this solution: the repository is not anymore coupled to concrete database, rather it defines 
+interface that database should conform. Now we can easily swap this database, we have freedom to choose any we want.
 Also interesting thing that you may notice in this principle is that dependency from concrete database and database 
 interface have opposite direction that **flow of control** - that's whole idea in dependency inversion. With it's 
 help we can control dependencies direction in that way our application require.
    
 So that's how our component model can be presented after applying dependency inversion principle to our 
-domain component. And that how we all apply this rule in our engineering live every day, trying to decouple our 
-main high-level concepts from implementation details. 
+domain component. And that's what every engineer should do on his job - try to decouple main high-level concepts 
+from implementation details.
 
 ![after-dependency-inversion](/assets/content/tdd-revealed/after-dependency-inversion.png)
 
@@ -111,7 +116,7 @@ and not flow of control we will see that Classical TDD development direction as 
 
 Detroit TDD not climbing from details to high-level, it does just the same as London but in other dimension, 
 trying to think in terms of software design first, starting from most and moving to less important things for our 
-software architecture. Who don't know which approach is better, but at least we can clearly see that:
-* If you focus on end result and applying **YAGNI** than it's better to choose **London** school.
-* If you have to enhance your application architecture and domain than, perhaps **Classical** TDD is most suitable for
+software architecture. Who knows which approach is better, but at least we can clearly see that:
+* If you focus on end result and **YAGNI** then it's better to choose **London** school.
+* If you have to enhance your application architecture and domain then, perhaps **Classical** TDD is most suitable for
  you. 
