@@ -9,7 +9,7 @@ author: frost-fox
 **Side note**: this article is written for people which are interested in TDD and software design. It assumes that 
 a reader is familiar with such terms as **TDD Schools**, **Software Architecture**. If you are not confident about 
 **Software Architecture** then 
-[there is comprehensive set of information about it link](https://github.com/testdouble/contributing-tests/wiki). 
+[there is comprehensive set of information about it](https://github.com/testdouble/contributing-tests/wiki). 
 Software architecture is very wide term, if you want to dive in it, my suggestion 
 [is book "Clean Architecture"](https://www.amazon.com/Clean-Architecture-Craftsmans-Software-Structure/dp/0134494164)
 by **Uncle Bob** and [its essence in this article](https://medium.com/gdplabs/clean-architecture-a8b5d93d0944).
@@ -93,7 +93,7 @@ between higher lever and lower level component, which is shown on picture.
 There is main advantage of this solution: the repository is not anymore coupled to concrete database, rather it defines 
 interface that database should conform. Now we can easily swap this database, we have freedom to choose any we want.
 Also interesting thing that you may notice in this principle is that dependency from concrete database and database 
-interface have opposite direction that **flow of control** - that's whole idea in dependency inversion. With it's 
+interface have opposite direction that **flow of control** - that's whole idea in dependency inversion. With its 
 help we can control dependencies direction in that way our application require.
    
 So that's how our component model can be presented after applying dependency inversion principle to our 
