@@ -4,6 +4,10 @@ authors:
     photo: maciej-lebkowski
     name: Maciej Łebkowski
     bio: Head of Technology team at Syzygy
+  frost-fox:
+    photo: frost-fox
+    name: Dmytro Konovalov
+    bio: Yada yada yada zoot
 
 default_author: puck
 

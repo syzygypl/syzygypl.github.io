@@ -881,6 +881,7 @@ body:not(.post-template) .post-title {
     height: auto;
     margin: 0 auto;
     padding: 0.6em 0;
+    max-height: 50rem;
 }
 
 /* Break out larger images to be wider than the main text column
