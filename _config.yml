@@ -18,7 +18,7 @@ name: it.szg.io
 
 logo: false
 paginate: 15
-google_analytics: 'UA-XXXXXXXX-X'
+google_analytics: 'UA-126834024-1'
 
 # Build settings
 markdown: kramdown
