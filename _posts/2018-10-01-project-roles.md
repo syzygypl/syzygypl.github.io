@@ -13,7 +13,7 @@ To challenge this we made a list of all project roles we feel are required, and 
 
 ## Project roles
 
-What we did instead is a general list of roles, and for now it goes as follows (in random order):
+What we did instead is a general list of roles. The obvious one is project ownership — an umbrella role for all of the other ones. It just means being responsible (by proxy) for the whole project. As such it’s uninteresting for us, so I’ll focus on the rest (in random order):
 
 ### Helicopter view
 
@@ -51,13 +51,9 @@ Self explanatory. In contrast to project management, this is about giving the es
 
 Communicating to the team what is the most important at a given point in time. In general this can be understood as providing a transparent communication to the team.
 
-### Expectation Management
+### Technical Expectation Management
 
 This is similar to risk management. We know our shortcomings, or we know where the (client’s) disappointments usually come from, so we try to get ahead of them and warn people ahead of time. For example if the team is inexperienced in a given technology we should announce that and explain what would it mean for the project, so nobody is surprised later. There is no better thing than a fuckup you know about in advance!
-
-### Ownership
-
-Being responsible for the whole project, delegating each role to the team. This is the topmost role, and arguably most important one. If anything doesn’t go as planned, this person is responsible in the end.
 
 ### Architecture
 
@@ -67,15 +63,72 @@ Designing high level solutions, especially in the early project stages. This is 
 
 Giving a helping hand in your area of expertise when needed. For example by attending a meeting or doing a code review, but not being otherwise involved in the project. 
 
-### Scaling
-
-Looking at multiple projects at a time and seeing them as one. Reuse, transferring knowledge between them, etc. This does not benefit the project directly, but allows you to grow as a company — cut costs, provide a better product and do it all faster.
 
 
-## Next steps
+## How can this list be useful to us?
 
 After we created the above list, we had last question to answer: what did we create? How will it help us in the future? Will we just stick a „this things need to be done” label on it and get on with our lives? Or will this become a part of job description for new employees, so we can blissfully and naively give ourselves high five for a job well done?
 
-The main takeaway for us is that we now have some kind of baseline we can work with. Our next step is to define who has each of those roles in one of the projects by creating a [responsibility assignment matrix](https://www.wikiwand.com/en/Responsibility_assignment_matrix), and go from there. Maybe this list isn’t complete? Maybe it’s too broad? Assigning those roles may cause some surprises or heated discussions. We may end up not assigning all of them if we feel none of us can do it correctly or just doesn’t have the time?
+## Responsibility Assignment Matrix
+
+The main takeaway for us is that we now have some kind of baseline we can work with. Our next step is to define who has each of those roles by creating a [responsibility assignment matrix](https://www.wikiwand.com/en/Responsibility_assignment_matrix), and go from there. 
+
+Before we began, we had to choose the participation types for the matrix. The [PACSI scheme](https://www.wikiwand.com/en/Responsibility_assignment_matrix#/PACSI) seemed most fitting for us. We adopted it and defined it as follows for our needs:
+
+ * **Perform** — this is the person doing the job in the end. No delegation, no maybies. For example, a developer needs to commit code to the repository. If they are not doing it regularly, something is off. You may not be solely responsible for the end product, though.
+ * **Accountable** — this means both Performing, and delegating to others, but in the end being responsible for what is made. A great example of this is a senior dev — does some of the work by themselves, delegates some parts to junior devs but sings off on their work. This is also understood as one of your daily duties.
+ * **Control** — you are not doing the work, but you may have a different perspective so you can veto the result presented to you. This role doesn’t seem fitting to our organization, so we used it very rarely. We’d rather work our a consensus, but not all processes allow us to do so.
+ * **Suggest** — this is an interesting role. It basically means to us someone that is not involved in the process, and only responding to ad-hoc needs. If you weren’t asked to give your opinion or expertise, it’s not your fault if it’s not done. 
+ * **Informed** — is a non-role actually. It just means some group needs to be kept in the loop. Everyone is informed by default in our organization. 
+
+## The matrix blueprint for projects
+
+We haven’t got to the point of evaluating an actual project, but we did make a blueprint — a starting point — to adapt in the future. Each participation type is defined in context of the following groups:
+
+ * **Project Owner** (PO) — the single person responsible for the project, as well as Project Managers that report to them. It seems that those groups may need to be split in the future.
+ * **Technical lead** (TL) — one of the organization roles responsible for team management. They may or may not be actively participating in each project, so it’s challenging to assing __accountable__ and __perform__ roles to them. To simplify, this group should probably include the most senior dev in the project team.
+ * **Technical director** (TD) — probably not involved in the project, especially in the later stages, but their expertise and high level POV is invaluable.
+ * **Team member** (TM) — everyone else, obviously.
+
+This is what we came up with to start, with some examples how this setup may work in practice:
+
+| Role | PO | TL | TD | TM |
+|---------|
+| Helicopter view | A | S | I | I | 
+| Project owner needs to know everything about the project, while the Tech lead may not be involved in the project, and can’t be required to know the project’s landscape |
+| Ad-hoc situations | A | S | S | P | 
+| Again, only the Project owner can respond to all situations, but usually delegates the execution to one of their lieutenants | 
+| Ad-hoc situations (alternate) | A | I | I | S |
+| This is a variant with more self contained team. Team members are appointed by the PO, and leaders are only informed about potential problems | 
+| Reporting | A | S | I | S |
+| PO is the only one that can see the whole project and asses its status, based on the team’s feedback and tech lead’s expertise — if needed | 
+| Documenting | A | S | I | S |
+| The important thing here is that the documentation is done in response to daily work made by the team | 
+| Documenting (alternative) | C | A | S | P |
+| This variant assumes creating documentation as a product for the client, for example during the discovery phase. We treat this as a technical task, and as such needs Tech lead’s supervision, with PO accepting or requesting changes to the end result |
+| Risk management | A | A | S | A |
+| Everyone needs to speak their mind if they see something is wrong. Be responsible and challenge potential problems early on instead of sweeping them under the rug | 
+| Project management | A | S | S | P | 
+| PO is responsible, but tech lead and director can give a helping hand, while the whole team is involved (sprint planning, estimations, converting business requirements to tasks, etc) | 
+| Role delegation and team assembly | S | P | A | I | 
+| This is the way it works for us. The CTO decides who will be assigned to a project based on team leaders input and PO’s requirements and prefferences. After the project is started, assigning tasks is self governing |
+| Planning and estimations | C | A | S | S |
+| Team leader is responsible for sensible estimations, done by the team, but the PO has the right to object and ask for a faster pace if the project requires it. This means going back to the drawing board and choosing different implementations, cutting corners, etc |
+| Announcing goals and transparent communication | A | P | S | I | 
+| ??? |
+| Technical Expectation Management | I | A | S | P |
+| Team members need to inform the stakeholders about technical debt, possible bugs, laconic requirements, complicated user interface, etc. |
+| Architecture | I | A | S | S |
+| Team leader is responsible, but probably delegates this to the most senior dev in the project, if they are not involved directly | 
+| Consulting | S | S | S | S |
+| By definition, consulting is a _suggest_ job. Giving this role to someone is just a hint, that they may be needed at some point in the project | 
+
+## Conclusion
+
+This model puts a lot of pressure on the Project Owner. If their role would include attending client meetings for example, this would probably take most of their time and as such would make them ineffective. To counter this, as much as possible should be delegated to project managers.
+
+Maybe this list isn’t complete? Maybe it’s too broad? Assigning those roles may cause some surprises or heated discussions. We may end up not assigning all of them if we feel none of us can do it correctly or just doesn’t have the time?
 
 Whatever comes from it, we all have a strong feeling we will learn something about our culture and project management, and that it’s a solid cornerstone for further improvement.
+
+
