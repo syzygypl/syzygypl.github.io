@@ -5,15 +5,15 @@ date:   2018-10-01 12:54:35 +0200
 category: about-us
 ---
 
-An insight into your own company or team to evaluate your weak points is one of the greatest tools you can use to improve. We’re constantly trying to do it using various ways (sprint retrospectives for example), but I’d like to believe critical thinking about ourselves run in our blood. This is why we recently identified a potential problem in the way we approach projects.
+An insight into your own company or team to evaluate your weak points is one of the greatest tools you can use to improve. We’re constantly trying to do it using various ways (sprint retrospectives for example), but I’d like to believe critical thinking about ourselves runs in our blood. This is why we’ve recently identified a potential problem in our approach to projects.
 
-It became apparent to us, that the roles we take in each project are unclear. There is a huge gray area, especially between team leaders, senior developers and project managers. We haven’t talked about it much so obviously there are some expectations that are not met on both sides.
+It became apparent to us that the roles we take in each project are unclear. There is a huge gray area, especially between team leaders, senior developers and project managers. We haven’t talked about it much so obviously there are some expectations that are not met on both the technical and the project management side.
 
 To challenge this we made a list of all project roles we feel are required, and we did this in two separate teams to combine different points of view. This list was strongly focused on team leader responsibilities first, but it became clear that it’s one-sided, and we cannot just dump all those responsibilities on one person, and that it varies from project to project.
 
 ## Project roles
 
-What we did instead is a general list of roles. The obvious one is the ownership of the project — an umbrella role for all of the other ones. It just means being responsible (by proxy) for the whole project. As such it’s uninteresting for us, so I’ll focus on the rest (in random order):
+What we did instead is a general list of roles. The obvious one is the project ownership — an umbrella role for all of the other ones. It just means being responsible (by proxy) for the whole project. As such it’s uninteresting for us, so I’ll focus on the rest (in random order):
 
 ### Helicopter view
 
@@ -21,7 +21,7 @@ Basically knowing more than is required to do your tasks, both in and out of you
 
 ### Responding to ad-hoc situations
 
-If a project is on fire, you’re the first line of defense. You may (and probably need to) delegate it further, but you’re the rapid response team. This allows an easy way out for every team member if something goes wrong and an urgent fix is required, for example, the project needs an additional developer, because it’s behind schedule. Without this role the responsibility would be distributed among the whole team and as such, it would be ineffective.
+If a project is on fire, you’re the first line of defense. You might (and probably need to) delegate it further, but you’re the rapid response team. This presents an easy course of action for every team member if something goes wrong and an urgent fix is required. For example, if the project needs an additional developer, because it’s behind schedule. Without this role the responsibility would be distributed among the whole team and therefore, it would be ineffective.
 
 ### Reporting
 
@@ -29,11 +29,11 @@ You can present the project status to stakeholders and bring anyone up to date. 
 
 ### Documenting
 
-Updating knowledge on Confluence, so everyone is on the same page. Documenting has a broader meaning, but for the purpose of defining roles, let’s just stick to gathering all knowledge and arrangements in one place. This may be as trivial as meeting notes — someone has to do it. Without this role, there wouldn’t be a single source of truth about the project; everything would be scattered among JIRA tasks, emails, bug trackers, slack, etc.
+Updating knowledge on Confluence, so everyone is on the same page. Documenting has a broader meaning, but for the purpose of defining roles, let’s just stick to gathering all knowledge and arrangements in one place. This may be as trivial as meeting notes — someone has to do it. Without this role, gathering all this information scattered among JIRA tasks, emails, slack conversations, bug trackers and other places would be nearly impossible.
 
 ### Risk Management
 
-This is both bringing awareness of project risks to the team, as well as acting on the currently identified risks. For example, if we have a tight schedule, we need to pay extra attention to our estimates, and regular planning sessions should reflect that, and the team needs to be aware of the priorities — no needless refactors this time, sorry. 
+This is both bringing awareness of project risks to the team, as well as acting on the already identified risks. For example, if we have a tight schedule, we need to pay extra attention to our estimates, and regular planning sessions should reflect that. Moreover the team needs to be aware of the priorities — no needless refactors this time, sorry. 
 
 ### Project Management
 
@@ -41,9 +41,9 @@ Managing everything related to JIRA and short-term planning — daily standups, 
 
 ### Traffic / Role delegation
 
-Helping in deciding which team member is best for the task at hand. Assigning roles mentioned here is also a traffic job, so I guess this role needs to be assigned first. 
+Helping with deciding which team member is best for the task at hand. Assigning roles mentioned here is also a traffic job, so I guess this role needs to be assigned first. 
 
-### Planning / Task estimation
+### Estimations
 
 Self-explanatory. In contrast to project management, this is about giving the estimates during planning sessions using your best knowledge and expertise. This also means estimating larger chunks of projects based on your experience, not the actual detailed specs. This can guide high-level decisions as to what direction to choose, which parts of the project are unprofitable, etc.
 
@@ -129,6 +129,6 @@ This model puts a lot of pressure on the Project Owner. If their role would incl
 
 Maybe this list isn’t complete? Maybe it’s too broad? Assigning those roles may cause some surprises or heated discussions. We may end up not assigning all of them if we feel none of us can do it right or just doesn’t have the time?
 
-Whatever comes from it, we all have a strong feeling we will learn something about our culture and project management, and that it’s a solid cornerstone for further improvement.
+Whatever comes out of it, we all have a strong feeling we will learn something about our culture and project management, and that it’s a solid cornerstone for further improvement.
 
 
