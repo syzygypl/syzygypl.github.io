@@ -48,7 +48,7 @@ you desire. Also we have designed additional api that depends on abstract contra
 `generateBody`, and defined additional contract concept in our domain - so and now it is easier to understand whole 
 system flow. It increases maintainability, reusability and readability.
 
-### Undesired dependencies damage
+## Undesired dependencies damage
 
 For now this approach with extension of abstract class gave us only benefits, but I want to show in which case it may 
 lead to design damage. Lets imagine that in some point you have added meta description to all of your pages, that 
@@ -109,7 +109,7 @@ introduced in parent class is inherited by it's child. Main point here is that w
 assumed that this `getDescription` will be useful for every child class. That's great when we desire to have this logic, 
 but problems start to appear when this logic is not needed in some cases (like described above). 
 
-### Interfaces
+## Interfaces
 
 Let's introduce another example of abstraction in OOP languages. It's called **interfaces**. Main difference between 
 interface and abstract class is that you are not allowed to have any implementation in interfaces. So it is pure 
@@ -168,7 +168,7 @@ Here we can see that it was no possible to add `getDescription` to `WebPage` bec
 interfaces, instead we had to add it directly to class that needed this feature. This approach saved us from damage 
 described in example with abstract class. Let's compare this two solutions more deeply. 
 
-### Theoretical view
+## Theoretical view
 
 Imagine how we can think of this problem in terms of contracts and their features. Lets call every contract 
 methods as features, so we will get `description`,`header`, `body` features in `WebPage` contract. Now we have 
@@ -186,7 +186,7 @@ it looks like.
 So main difference of interfaces and abstract classes is default implementation, only that thing may be harmful
 in case of our design. And this was depicted in design problem above.
 
-### Rectangle is a Square problem
+## Rectangle is a Square problem
 
 Let's investigate one more example, where inheritance don't works well. This topic is called **square is rectangle** 
 problem: imagine that you have class `Rectangle` with `width` and `height` accessors and `area` calculation. Also we 
@@ -227,7 +227,7 @@ public class Square extends Rectangle {
 }
 ```
 
-### Liskov Substitution Principle
+## Liskov Substitution Principle
 
 Everything looks great now, but if somewhere in our application we will write method that operates on `Rectangle` 
 and pass square to it, we can spot logic problem. It means that square instance don't works well in terms of 
@@ -256,7 +256,7 @@ was encapsulated some logic previously was broken. So as you can see partial mod
 to design damage. 
 
 
-### Undesired public contract
+## Undesired public contract
 
 Another way we can approach this problem is adding new accessors to square `Square` and not modifying old ones.
 That's our new `Square`: 
@@ -301,7 +301,7 @@ We have assumed that `width` accessor on `Square` class will be correct in terms
 method was implemented in parent class and know's nothing about it's child logic. And now we have opposite problem - 
 our child class has got default public contract that is not working in terms of his logic.
 
-### Cure 
+## Cure 
 
 So again interfaces can solve problems that emerges from default implementation. Let's create `Rectangle` interface:
 ```java
@@ -349,7 +349,7 @@ be able to implement like `setWidth` and `setHeight` it will be easy to spot the
 completely eliminate problem, and you can still break Liskov or get undesired contract, but as it was explained 
 earlier it is really hard, and you can do it by accident. 
   
-### Default implementation problems 
+## Default implementation problems 
 To sum up, there's comprehensive list of problems you will be able to introduce with inheritance:
  * Undesired dependencies
  * Liskov Substitution Principle
