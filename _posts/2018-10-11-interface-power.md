@@ -6,11 +6,10 @@ category: technology
 author: frost-fox
 ---
 
-### Abstraction and polymorphism
-
 In the very beginning main idea of this post was to explain why interfaces are good and show some patterns to solve 
 common problems. Unfortunately while describing why they are good it becomes something like "use pure interfaces instead
-of abstract classes and inheritance". But anyway I will continue this topic and show real power of interfaces.
+of abstract classes and inheritance" or more obvious "why inheritance is bad and how to solve it". But anyway I will 
+continue this topic and show real power of interfaces.
 
 In object oriented programming such principles as Polymorphism and Abstraction are considered as golden rules, and we
 all understand theoretical basis of this principles and their simplistic beauty. In OOP abstraction mechanism allows us 
@@ -189,7 +188,7 @@ in case of our design. And this was depicted in design problem above.
 
 ### Rectangle is a Square problem
 
-Let's investigate one more example, where inheritance don't works well.This topic is called **square is rectangle** 
+Let's investigate one more example, where inheritance don't works well. This topic is called **square is rectangle** 
 problem: imagine that you have class `Rectangle` with `width` and `height` accessors and `area` calculation. Also we 
 have created class `Square`. We all know that square is just corner case of rectangle so all rectangle calculation apply
 to square too, so square **is a** rectangle. With in mind we have applied inheritance to `Rectangle` and `Square`. Also 
@@ -338,10 +337,10 @@ public class Square implements Rectangle {
     }
 }
 ```
-Two setters for same thing looks weird, do they? If we will do simple accessors to `height` and `weight` properties 
-then we will break encapsulation because square always guarantee that it has equal sides size. If you will change 
-both height and width in every setter, setters will become more than simple setters. There is no straightforward way 
-to implement them... And every programmer thinks about this method as simple accessors without logic. So implementing
+Two setters for same thing looks weird, yes? So it is not acceptable result for us. 
+If we will be simple accessors to `height` and `weight` properties then we will break encapsulation because square 
+always guarantee that it has equal sides size. If you will change both height and width in every setter, setters 
+will become more than simple setters. There is no straightforward way to implement them... So implementing
 interface will give you sign that something is probably broken with your design.
 
 What about undesired public contract? Same story - if you will implement interface and see methods that you will not 
