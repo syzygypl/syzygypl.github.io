@@ -6,11 +6,12 @@ category: technology
 author: frost-fox
 ---
 
-In the very beginning main idea of this post was to explain why interfaces are good and show some patterns to solve common problems. Unfortunately while describing why they are good it becomes something like "use pure interfaces instead of abstract classes and inheritance" or more obvious "why inheritance is bad and how to solve it". But anyway I will continue this topic and show the real power of interfaces.
+In the very beginning main idea of this post was to explain why interfaces are good and show some patterns to solve common problems. Unfortunately while describing why they are good it becomes something like "use pure interfaces instead of abstract classes and inheritance" or more obvious "why inheritance is bad and in which way you can solve its problems". But anyway I will continue this topic and show the real power of interfaces.
 
-In object-oriented programming such principles as Polymorphism and Abstraction are considered as golden rules, and we all understand the theoretical basis of these principles and their simplistic beauty. In OOP abstraction mechanism allows us to think in terms of **contracts** without specifying its details at the beginning and deferring this moment to implementation. One of the examples of abstraction is methods defined as **abstract**. Polymorphism gives us ability to dynamically use any instance we want in terms of the desired contract if it has this contract implemented.
+In object-oriented programming such principles as Polymorphism and Abstraction are considered as golden rules, and we all understand the theoretical basis of these principles and their simplistic beauty. In OOP abstraction mechanism allows us to think in terms of **contracts** without specifying its details at the beginning and deferring this moment to implementation. One of the examples of abstraction in Java is methods defined as **abstract**. Polymorphism gives us ability to dynamically use any instance we want in terms of the desired contract if it has this contract implemented.
 
 Sometimes abstraction is a very great tool to solve many programming problems. Imagine that you have a system with different web pages types and you want to have the ability to generate this pages to HTML. You can create an abstract class and its implementation as below:
+
 ```java
 public abstract class WebPage {
     
