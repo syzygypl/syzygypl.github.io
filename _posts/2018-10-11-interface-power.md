@@ -143,10 +143,15 @@ Here we can see that it was not possible to add `getDescription` to `WebPage` be
 ## Theoretical view
 
 Imagine how we can think of this problem in terms of contracts and their features. Let's call every contract methods as features, so we will get `description`,`header`, `body` features in `WebPage` contract. Now we have `description` feature defined in `WebPage` and `ProductWebPage` that have this features inherited, `body` and `header` features are abstract and therefore implemented in `ProductWebPage`.
+
 ![inheritance](inheritance.png)
+
 But lets slightly change terms - how we can think about the description if it was abstract? Then `description` is same abstract feature as `header` but with default implementation that is used if the feature is not implemented in the child class. And that how it is reflected in our example.
+
 ![abstract-with-default](abstract-with-default.png)
+
 Also when we doing override we just choose not to use default implementation but create it by ourselves. That's what it looks like.
+
 ![abstract-with-override](abstract-with-override.png)
 
 So the main difference between interfaces and abstract classes is default implementation, only that thing may be harmful in then case of our design. And this was depicted in the design problem above.
