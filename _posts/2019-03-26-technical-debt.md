@@ -3,7 +3,7 @@ title: Dług techniczny
 excerpt: Porównałem dług techniczny do długu finansowego — efektywne narzędzie do ominięcia braku zasobów w jednym momencie, licząc na to, że w późniejszym czasie będzie nam łatwiej „spłacić“ takie zobowiązanie. Wspomniałem o nieoczywistych momentach, w których zaciągamy dług, jak np podczas doboru nieodpowiedniej technologii, odchodzenie od rynkowych standardów albo... nic nie robiąc, bo dług techniczny sam z siebie narasta. Wspomniałem też o tym jak sobie z nim radzić w organizacji — przede wszystkim poprzez mierzenie jego poziomu oraz aktywną pracę z Klientem, aby utrzymywać go na komfortowym poziomie
 category: technology
 date: 2019-03-26 22:34
-author: maciej-lebkowski
+author: puck
 layout: post
 ---
 
