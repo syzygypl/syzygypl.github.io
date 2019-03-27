@@ -13,13 +13,13 @@ Prowadziłem ostatnio retrospekcję jednego z projektów. Przeglądając notatki
 
 ## Ale dług jest techniczny czy technologiczny?
 
-Nie zbaczając za daleko z tematu: ja piszę o technicznym, jeśli ktoś życzy sobie dowiedzieć czegoś o technologicznym, to zapraszam w inne miejsce.
+Zależy kto mówi, bo pojęcie jest jedno, tylko różnie nazywane. Nie wchodząc w potyczki słowne: będę używał tego pierwszego zwrotu. 
 
 ## Czym jest dług techniczny?
 
 Tak jak każdy dług, jest to **przeniesienie pewnych zasobów w czasie** — w tym przypadku chodzi o umiejętności programistów, czas lub przychylne spojrzenie Klienta. Tworzymy oprogramowanie pożyczając sobie te rzeczy z przyszłości, licząc na to, że później będzie nam łatwiej o te rzeczy, wraz z nawiązką. 
 
-Tak jak w przypadku zadłużenia finansowego, mówimy o normalnym narzędziu, które jest bardzo popularnie używane i wcale nie należy go unikać, a jedynie **kontrolować jego poziom**.
+Tak jak w przypadku zadłużenia finansowego, mówimy o narzędziu, które jest bardzo popularnie używane i wcale nie trzeba go za wszelką cenę unikać, a jedynie **kontrolować jego poziom**.
 
 Można próbować klasyfikować powody jego powstawania na rozważne i nierozważne, a z drugiej strony celowe lub nieumyślne, ale dziś nie będę wchodził dalej w teorię, przejdźmy do praktyki. 
 
