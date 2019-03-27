@@ -9,7 +9,7 @@ layout: post
 
 Słowem wstępu.
 
-Prowadziłem ostatnio retrospekcję jednego z projektów. Przeglądając notatki z sekcji „problemy” zaczął kształtować się jeden, bardzo jasny komunikat — mamy problem z długiem technicznym. Nie był to też odosobniony przypadek, a w dodatku objawiał się w tym projekcie w szczególny — oraz dość nieprzewidywany — sposób. Był to doskonały pretekst, żeby podsumować sobie czym jest dług techniczny, co wpływa na jego pogłębianie oraz jak nim zarządzać.
+Prowadziłem ostatnio retrospekcję jednego z projektów. Przeglądając notatki z sekcji „problemy” zaczął kształtować się jeden, bardzo jasny komunikat — mamy problem z długiem technicznym. Nie był to też odosobniony przypadek, a w dodatku objawiał się w tym projekcie w szczególny — oraz dość nieprzewidywalny — sposób. Był to doskonały pretekst, żeby podsumować czym jest dług techniczny, co wpływa na jego pogłębianie oraz jak nim zarządzać.
 
 ## Ale dług jest techniczny czy technologiczny?
 
@@ -17,7 +17,7 @@ Nie zbaczając za daleko z tematu: ja piszę o technicznym, jeśli ktoś życzy 
 
 ## Czym jest dług techniczny?
 
-Tak jak każdy dług, jest to **przeniesienie pewnych zasobów w czasie** — w tym przypadku chodzi o umiejętności programistów, czas lub przychylne spojrzenie Klienta. Tworzymy oprogramowanie pożyczając sobie te rzeczy z przyszłości, licząc na to, że w późniejszej dacie będzie nam łatwiej o te rzeczy, wraz z nawiązką. 
+Tak jak każdy dług, jest to **przeniesienie pewnych zasobów w czasie** — w tym przypadku chodzi o umiejętności programistów, czas lub przychylne spojrzenie Klienta. Tworzymy oprogramowanie pożyczając sobie te rzeczy z przyszłości, licząc na to, że później będzie nam łatwiej o te rzeczy, wraz z nawiązką. 
 
 Tak jak w przypadku zadłużenia finansowego, mówimy o normalnym narzędziu, które jest bardzo popularnie używane i wcale nie należy go unikać, a jedynie **kontrolować jego poziom**.
 
@@ -41,37 +41,37 @@ Efektem jest oprogramowanie, które nie spełnia wszystkich wymagań, ma ukryte 
 
 ### Brak umiejętności zespołu
 
-Często dług techniczny nie jest wcale zaciągany świadomie. Zespół dopiero z czasem może zrozumieć, że przyjęte przez nich rozwiązanie ogranicza możliwości rozwoju w przyszłości. Może to być po prostu brak warsztatowy lub brak doświadczenia w podobnych realizacjach, uniemożliwiający przewidzenie nadchodzących problemów.
+Często dług techniczny nie jest zaciągany świadomie. Zespół dopiero z czasem może zrozumieć, że przyjęte przez nich rozwiązanie ogranicza możliwości rozwoju w przyszłości. Może to być po prostu brak warsztatowy lub brak doświadczenia w podobnych realizacjach, uniemożliwiający przewidzenie nadchodzących problemów.
 
 W takim przypadku trzeba się zadłużyć, aby polepszyć jakość kodu wraz ze wzrostem kompetencji w przyszłości, niejednokrotnie wykonując ponownie tę samą pracę, nie dodając wartości biznesowej produktowi (czyli przytaczany często *refactoring*).
 
 ### Brak planowania i odpowiedniej architektury
 
-Naturalnym jest, że ogólna forma i architektura modułu małego lub średniej wielkości będzie się różnić od tej dla modułu dużej skali. Dobranie nieodpowiedniego rozwiązania (świadomie lub nie) będzie powodowało problemy lub nieefektywną pracę na dalszych etapach projektu — z jednej strony poprzez zbyteczny narzut związany z achitekturą (zwany często *boilerplate*), lub z drugiej poprzez ograniczenia wynikającej z niedostatecznie elastycznej architektury.
+Naturalnym jest, że ogólna forma i architektura małego lub średniej wielkości modułu będzie się różnić od tej dla modułu dużej skali. Dobranie nieodpowiedniego rozwiązania (świadomie lub nie) będzie powodowało problemy lub nieefektywną pracę na dalszych etapach projektu — z jednej strony poprzez narzut związany z architekturą (zwany często *boilerplate*), lub z drugiej poprzez ograniczenia wynikające z niedostatecznie elastycznej architektury.
 
 ### Zmiana wymagań
 
 Oczywiście nie chodzi o samą zmianę, ale o nieodpowiednie do niej podejście. Przykładowo, jeśli dobierzemy odpowiednią architekturę do naszego rozwiązania średniej skali, ale z czasem zmienią się wymagania i zmieni się skala projektu, mamy dwie możliwości:
 
- * Kontynuować pracę w istniejącej architekturze, dokładając tym samym do długu technicznego (patrz poprzedni punkt)
+ * Kontynuować pracę w istniejącej architekturze, zwiększając tym samym poziom długu technicznego (patrz poprzedni punkt)
  * Zaplanować — często kosztowną — zmianę architektury. Oszczędność wynikająca z porzucenia tych prac może wydawać się łakomym kąskiem dla decydentów w projekcie, jednak warto przekalkulować, czy ten koszt nie wróci do nas zwielokrotniony za jakiś czas.
 
 ### Brak dokumentacji oraz testów automatycznych
 
 Zaczynamy wchodzić w tematy mniej oczywiste. Kod nieudokumentowany (a testy automatyczne są formą dokumentacji) jest traktowany jako kod legacy, czyli taki, którego działania nie jesteśmy w stanie z góry przewidzieć. Nie jesteśmy też w stanie określić wszystkich spełnianych przez niego wymagań. 
 
-Powoduje to, że jego zmiana jest ryzykowna oraz kosztowna, a często wręcz jesteśmy sparaliżowani i wpadamy w błędne koło — bojąc się usprawnień tkwimy w sytuacji, która z czasem ma szansę jedynie się pogorszyć.
+Powoduje to, że jego zmiana jest ryzykowna oraz kosztowna, a często wręcz jesteśmy sparaliżowani i wpadamy w błędne koło — bojąc się usprawnień tkwimy w sytuacji, która z czasem może jedynie się pogorszyć.
 
 ### Niespójność z obowiązującymi standardami
 
-Odchodzenie od sposobów powszechnie przyjętych — np. w innych projektach podobnego typu. Rozpatrując ten punkt w kontekście stałego zespołu nie jesteśmy w stanie zauważyć zagrożenia. Sprawa pokazuje się z innej perspektywy, gdy myślimy o powiększeniu lub wymianie członków tego zespołu. Jeśli trzymamy się ogólnie przyjętych wzorców, mamy dużą szansę znaleźć na rynku pracy specjalistów obeznanych z tymi zasadami. W przeciwnym wypadku poszukujemy niszowych, wysoko płatnych kandydatów, albo nasz proces wdrożenia trwa — i kosztuje — znacznie więcej niż byłoby to dla nas komfortowe.
+Odchodzenie od reguł powszechnie przyjętych — np. w innych projektach podobnego typu. Rozpatrując ten punkt w kontekście stałego zespołu nie jesteśmy w stanie zauważyć zagrożenia. Sprawa pokazuje się z innej perspektywy, gdy myślimy o powiększeniu lub wymianie członków tego zespołu. Jeśli trzymamy się ogólnie przyjętych wzorców, mamy dużą szansę znaleźć na rynku pracy specjalistów obeznanych z tymi zasadami. W przeciwnym wypadku poszukujemy niszowych, wysoko płatnych kandydatów, albo nasz proces wdrożenia trwa — i kosztuje — znacznie więcej niż byłoby to dla nas komfortowe.
 
 ### Brak prac utrzymaniowych
 
 Zarówno z braku inicjatywy zespołu jak i ze świadomej decyzji Klienta (mającej na celu np. ograniczenie kosztów). Wiąże się to z większością powyższych punktów:
 
  * Z czasem zmieniają się wymagania i o ile nie przy każdej z nich potrzebna jest redukcja długu, to raz na jakiś czas warto takie prace zaplanować.
- * Zmieniający się zespół — czy to ze względu na powiększanie kompetencji, czy ich zmianę (a co za tym idzie zmianę strefy komfortu) — potrzebuje dostosować do siebie środowisko i sposoby pracy.
+ * Zmieniający się zespół — czy to ze względu na powiększanie kompetencji, czy ich zmianę (a co za tym idzie zmianę narzędzi, w których czuje się komfortowo) — potrzebuje dostosować do siebie środowisko i sposoby pracy.
  * Najlepsze rozwiązanie na rynku dziś, w przyszłości może być nieadekwatne (i prawdopodobnie będzie, to kwestia czasu) — a wtedy skompletowanie zespołu będzie niemożliwe lub zbyt kosztowne.
 
 ## Czy zawsze należy ograniczać dług?
@@ -82,14 +82,14 @@ Powtórzę raz jeszcze — nie chodzi o eliminację, ale o **utrzymywanie go na 
 
 ## Czy dobór technologii ma wpływ na dług techniczny?
 
-Tak, ale jest to pewien paradoks. Weźmy dla przykładu rozwiązania pudełkowe, jak np. Drupal czy Magento (to akurat z naszego podwórka). Decyzja o takim stacku na pewno pozytywnie wpłynie na poziom dokumentacji albo dostosowanie się do rynkowych standardów (łatwiej znaleźć specjalistę od Magento, niż od prywatnego rozwiązania stworzonego w agencji). Niestety z drugiej strony jest to system, który nie sprzyja dobrym praktykom programowania (w uproszczeniu rzecz biorąc), zwiększając ilość rozwiązań na skróty (poprzez syndrom wybitych okien) albo ograniczając ilość testów automatycznych.
+Tak, ale jest to pewien paradoks. Weźmy dla przykładu rozwiązania pudełkowe, jak np. Drupal czy Magento (to akurat z naszego podwórka). Decyzja o takim stacku na pewno pozytywnie wpłynie na poziom dokumentacji albo dostosowanie się do rynkowych standardów (łatwiej znaleźć specjalistę od Magento, niż od prywatnego rozwiązania stworzonego w agencji). Niestety z drugiej strony jest to system, który nie sprzyja dobrym praktykom programowania (w uproszczeniu), zwiększając ilość rozwiązań na skróty (poprzez syndrom wybitych okien) albo ograniczając ilość testów automatycznych.
 
 Mówię o tym oczywiście w kontekście naszej organizacji, bo z pewnością istnieją zespoły, dla których nie jest to wcale problem — ale to kolejna cecha długu technicznego: nie można rozpatrywać go obiektywnie, a w konkretnym kontekście. 
 
 
 ## Konsekwencje
 
-Dla organizacji i zespołów, wysoki poziom długu technicznego powoduje szereg problemów. Większości z nich nie widać od razu, ale dopiero po czasie, co czyni całą sytuację o tyle groźniejszą. Nikt przecież nie chwali projektu, który po prostu działa i posuwa się sprawnie do przodu, ale każdy zauważa jego braki i problemy, jeśli po tygodniach lub miesiącach tempo zauważalnie zwalnia, ilość błędów rośnie, a zmiany niegdyś trywialne teraz są ryzykowne i wymagają dokładnego planowania. 
+Dla organizacji i zespołów, wysoki poziom długu technicznego powoduje szereg problemów. Większości z nich nie widać od razu, ale dopiero po czasie, co czyni całą sytuację jeszcze groźniejszą. Nikt przecież nie chwali projektu, który po prostu działa i posuwa się sprawnie do przodu, ale każdy zauważa jego braki i problemy, jeśli po tygodniach lub miesiącach tempo zauważalnie zwalnia, ilość błędów rośnie, a zmiany niegdyś trywialne teraz są ryzykowne i wymagają dokładnego planowania. 
 
 Dług techniczny powoduje:
 
@@ -120,7 +120,7 @@ Całe to podsumowanie nie miałoby sensu, jeśli nie płynęłaby z niego jakaś
 
  * Używanie rynkowych standardów. Naturalnym wnioskiem z przytoczonej historii była decyzja o zmianie stacku na taki, który używa jednego z frameworków frontendowych zamiast „klasycznego” podejścia. Możliwość szybkiego skalowania zespołu jest dla nas dużo ważniejsza niż budowanie efektywności poprzez długoletnie doświadczenie w jednym rozwiązaniu.
  * Ciągła aktualizacja używanych rozwiązań. Analogicznie do kompletnej zmiany frameworków, również te istniejące już trzeba aktualizować do bieżących wersji, otwierając się na możliwości nowych bibliotek open source oraz przyciągając lepszych kandydatów do pracy.
- * Upewnienie się o odpowiednim poziomie testów jednostkowych i dokumentacji w projektach. Często przymykaliśmy na to oko, rozumiejąc, że jest to pewien kompromis. Teraz jednak szale się przeważyły i wraz z rosnącym udziałem projektów utrzymaniowych, istnienie wysokiego pokrycia testów staje się dużo ważniejsze.
+ * Upewnienie się o odpowiednim poziomie testów jednostkowych i dokumentacji w projektach. Często przymykaliśmy na to oko, rozumiejąc, że jest to pewien kompromis. Teraz jednak szala się przeważyła i wraz z rosnącym udziałem projektów utrzymaniowych, istnienie wysokiego pokrycia testów staje się dużo ważniejsze.
  * Wprowadzanie regularnego refactoringu, który sam w sobie nie przynosi wartości biznesowej, ale służy ograniczaniu poziomu długu na wczesnym etapie, nie pozwalając mu się rozrosnąć.
  
 Na koniec jeszcze dwa punkty, które są niejako wisienką na torcie naszych wniosków. 
@@ -137,5 +137,6 @@ Bez świadomości i zrozumienia Klienta, w naszym trybie pracy redukcja długu t
 
 ## Na zakończenie
 
-To tylko jeden punkt widzenia, dość przy tym okrojony — mam wrażenie, że prześlizgujemy się jedynie po powierzchni tematu, a to co faktycznie możemy robić w tej sprawie może znacząco odmienić się w nadchodzących miesiącach i latach. Mamy jednak solidną podstawę do tego, aby rozumieć i zacząć skutecznie zarządzać długiem technicznym.
+To tylko jeden, subiektywny punkt widzenia — mam wrażenie, że prześlizgujemy się jedynie po powierzchni tematu, a to co faktycznie możemy robić w tej sprawie może znacząco odmienić się w nadchodzących miesiącach i latach. Mamy jednak solidną podstawę do tego, aby rozumieć i zacząć skutecznie zarządzać długiem technicznym.
+
 
