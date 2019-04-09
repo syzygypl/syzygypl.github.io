@@ -24,7 +24,7 @@ Pisząc ogłoszenia do stanowisk, na które obecnie szukamy, też mógłbym je o
 
 Jednak przygotowując ogłoszenia uznaliśmy, że to nie te słowa kluczowe mają przyciągać do nas pracowników, ale pełny i rzetelny obraz naszej organizacji i projektów, które realizujemy. Jednym z głównych celów rekrutacji jest długofalowe zatrudnienie, oparte między innymi na wspólnym zaufaniu. Nie da się zbudować takiej relacji kłamiąc… lub po prostu upiększając już podczas pierwszego kontaktu.
 
-Nie wierzę też, że z osobami podążającymi za tego typu trendami (FinTech, ML, NoSQL, etc) da się budować długofalową relację. To tylko moda i kiepskie fundamenty do budowania czegoś trwałego. Owszem, odrobinę hype-driven-development może nie jest zła i sporo osób chciałoby liznąć tych nowinek, ale możemy porozmawiać sobie o nich w drugiej albo trzeciej kolejności.
+Nie wierzę też, że z osobami podążającymi wyłącznie za tego typu trendami (FinTech, ML, NoSQL, etc) da się budować długofalową relację. To tylko moda i kiepskie fundamenty do budowania czegoś trwałego. Owszem, odrobinę hype-driven-development może nie jest zła i sporo osób chciałoby liznąć tych nowinek, ale możemy porozmawiać sobie o nich w drugiej albo trzeciej kolejności. Na początek dopasujmy się w temacie wartości, które są nam bliskie i kultury, którą chcielibyśmy razem tworzyć.
 
 Nasze ogłoszenia nie są pewnie atrakcyjne dla części kandydatów. Nie wiem jak duża jest ta część, może tylko 10%, może 50% albo więcej? Na szczęście te osoby, do których trafia nasz przekaz, cenią nas za szczerość i autentyczność w całym procesie rekrutacji, a po dołączeniu do zespołu obie strony są zadowolone z decyzji. A o buzzwordach w projektach, możemy porozmawiać sobie za zamkniętymi drzwiami.
 
