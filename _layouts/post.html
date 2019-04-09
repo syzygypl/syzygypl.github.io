@@ -57,6 +57,12 @@ post_class: post-template
         {% assign firstCategory = page.categories | first %}
         {% assign archive = site.categories[firstCategory] %}
 
+        {% if page.comments %}
+        <section class="archive">
+            <h5>Comments</h5>
+            <p><a href="{{ page.comments }}">Join the discussion on LinkedIn</a></p>
+        </section>
+        {% endif %}
         {% if archive.size > 1 %}
         <section class="archive">
             <h5>Related</h5>
