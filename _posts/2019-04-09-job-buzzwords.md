@@ -5,6 +5,7 @@ category: values
 date: 2019-04-09 09:27
 author: puck
 layout: post
+comments: https://www.linkedin.com/pulse/dlaczego-zdecydowali%25C5%259Bmy-si%25C4%2599-nie-u%25C5%25BCywa%25C4%2587-buzzword%25C3%25B3w-w-maciej-%25C5%2582ebkowski
 ---
 
 Dostałem ostatnio zaproszenie do rekrutacji z tytułem „IoT/A.I. Sztuczna inteligencja” do „wiodącego dostawcy”, a od kandydatów wymagało się doświadczenia w podejściu mikroserwisowym oraz DevOps. Co prawda można tam było jeszcze dodać jeszcze „Big Data”, „Serverless” i „FinTech”, ale już tyle wystarczyło, abym chwycił haczyk. Jednak po krótkiej rozmowie okazało się, że u Klienta faktycznie istnieją jakieś rozwiązania, które da się zaklasyfikować jako IoT (z rozmowy zupełnie nie wynikało, czy sztuczna inteligencja również jest wykorzystywana), ale obowiązki na tym stanowisku polegały na stworzeniu CMS-a dostarczającego komunikaty do aplikacji mobilnej, obsługującej wymienione wcześniej urządzenia.
