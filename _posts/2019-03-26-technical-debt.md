@@ -9,7 +9,7 @@ layout: post
 
 Słowem wstępu.
 
-Prowadziłem ostatnio retrospekcję jednego z projektów. Przeglądając notatki z sekcji „problemy” zaczął kształtować się jeden, bardzo jasny komunikat — mamy problem z długiem technicznym. Nie był to też odosobniony przypadek, a w dodatku objawiał się w tym projekcie w szczególny — oraz dość nieprzewidywalny — sposób. Był to doskonały pretekst, żeby podsumować czym jest dług techniczny, co wpływa na jego pogłębianie oraz jak nim zarządzać.
+Prowadziłem ostatnio retrospekcję jednego z projektów. Przeglądając notatki z sekcji „do poprawy” zaczął kształtować się jeden, bardzo jasny komunikat — wiele z nich wynikało z długu technicznego. Nie był to też odosobniony przypadek, a w dodatku objawiał się w tym projekcie w szczególny — oraz dość nieprzewidywalny — sposób. Był to doskonały pretekst, aby zrobić krok wstecz i na spokojnie zastanowić się czym jest dług techniczny, co wpływa na jego pogłębianie oraz jak nim zarządzać.
 
 ## Ale dług jest techniczny czy technologiczny?
 
@@ -25,7 +25,7 @@ Można próbować klasyfikować powody jego powstawania na rozważne i nierozwa�
 
 Istotne jest to, że dług będziemy musieli kiedyś spłacić, prawdopodobnie z odsetkami. Postaram się więc skupić na wskazaniu tych odsetek — czyli dodatkowych kosztów — w wymienianych przypadkach.
 
-Będę się również skupiał na szerszym rozumieniu tego pojęcia — czyli wszystkie decyzje, które w efekcie wydłużają lub utrudniają proces wytwarzania oprogramowania w przyszłości. Nawet jeśli nie są to *stricte* elementy długu technicznego, to warto o nich myśleć w podobny sposób oraz używać tych samych narzędzi do ich redukcji.
+Będę się również skupiał na szerszym rozumieniu tego pojęcia — czyli na wszystkich decyzjach, które w efekcie wydłużają lub utrudniają proces wytwarzania oprogramowania w przyszłości. Nawet jeśli nie są to *stricte* elementy długu technicznego, to warto o nich myśleć w podobny sposób oraz używać tych samych narzędzi do ich redukcji.
 
 ## W jaki sposób powstaje dług techniczny?
 
@@ -37,7 +37,7 @@ Jest to opis dość lakoniczny, wejdę więc w szczegóły.
 
 Terminy i budżety często idą w parze i na potrzeby tego wytłumaczenia można traktować je jednakowo. Jeśli rozwiązanie optymalne zajmie więcej czasu, niż jesteśmy w stanie na nie poświęcić, to świadomie decydujemy się na zaciąganie długu, realizując wymagania biznesowe w sposób prostszy.
 
-Efektem jest oprogramowanie, które nie spełnia wszystkich wymagań, ma ukryte błędy lub ryzyko błędów. Możliwe też, że zamiast efektów widocznych od razu, zwiększamy sobie „oprocentowanie długu”, a przez to wszelkie inne działania mogą okazać się bardziej kosztowne.
+Efektem jest oprogramowanie, które nie spełnia wszystkich wymagań biznesowych, zawiera w sobie bugi (z których istnienia możemy sobie jeszcze nie zdawać sprawy) lub wysokie ryzyko powstawania błędów w przyszłości. Możliwe też, że zamiast efektów widocznych od razu, zwiększamy sobie „oprocentowanie długu”, a przez to wszelkie inne działania mogą okazać się bardziej kosztowne.
 
 ### Brak umiejętności zespołu
 
@@ -68,11 +68,7 @@ Odchodzenie od reguł powszechnie przyjętych — np. w innych projektach podobn
 
 ### Brak prac utrzymaniowych
 
-Zarówno z braku inicjatywy zespołu jak i ze świadomej decyzji Klienta (mającej na celu np. ograniczenie kosztów). Wiąże się to z większością powyższych punktów:
-
- * Z czasem zmieniają się wymagania i o ile nie przy każdej z nich potrzebna jest redukcja długu, to raz na jakiś czas warto takie prace zaplanować.
- * Zmieniający się zespół — czy to ze względu na powiększanie kompetencji, czy ich zmianę (a co za tym idzie zmianę narzędzi, w których czuje się komfortowo) — potrzebuje dostosować do siebie środowisko i sposoby pracy.
- * Najlepsze rozwiązanie na rynku dziś, w przyszłości może być nieadekwatne (i prawdopodobnie będzie, to kwestia czasu) — a wtedy skompletowanie zespołu będzie niemożliwe lub zbyt kosztowne.
+Zarówno z braku inicjatywy zespołu jak i ze świadomej decyzji Klienta (mającej na celu np. ograniczenie kosztów). Z czasem zmieniają się wymagania i o ile nie przy każdej z nich potrzebna jest redukcja długu, to raz na jakiś czas warto takie prace zaplanować. Ponadto, najlepsze spośród dziś dostępnych na rynku rozwiązań w przyszłości mogą być nieadekwatne (i prawdopodobnie będą, to kwestia czasu) — a wtedy skompletowanie zespołu będzie niemożliwe lub zbyt kosztowne.
 
 ## Czy zawsze należy ograniczać dług?
 
@@ -104,15 +100,17 @@ Dług techniczny powoduje:
 
 Bijąc się w pierś opowiem o historii, której zdecydowanie nie mogę zaliczyć do moich sukcesów, a wynika ona — z perspektywy czasu — z jednej bardzo zasadnej merytorycznie, ale złej z punktu strategicznego decyzji. 
 
-Mniej więcej trzy-cztery lata temu, wprowadzając nowe technologie do Syzygy (wtedy jeszcze Ars Thanea), zdecydowaliśmy się — a ja byłem głównym orędownikiem tych zmian — na połączenie Symfony, Twig oraz gulp. Był to sprawdzony zestaw narzędzi, dobrze rozumiany przez zarówno frontendowców jak i backendowców — tak u nas w firmie jak i na rynku pracy. Zaangażowaliśmy się w to rozwiązanie, realizując w nim kolejne wdrożenia, budując nasze inventory (czyli gotowe rozwiązania, które mogliśmy przenosić pomiędzy projektami) i z czasem opierając na nim naszą skuteczność.
+Mniej więcej trzy-cztery lata temu, wprowadzając nowe technologie do Syzygy, zdecydowaliśmy się — a ja byłem głównym orędownikiem tych zmian — na połączenie Symfony, Twig oraz gulp. Był to sprawdzony zestaw narzędzi, dobrze rozumiany przez zarówno frontendowców jak i backendowców — tak u nas w firmie jak i na rynku pracy. Zaangażowaliśmy się w to rozwiązanie, realizując w nim kolejne wdrożenia, budując nasze inventory (czyli gotowe rozwiązania, które mogliśmy przenosić pomiędzy projektami) i z czasem opierając na nim naszą skuteczność.
 
 Było to… W zasadzie powinienem napisać: jest to rozwiązanie bardzo silne technologicznie, realizujące nasze potrzeby (oraz naszych Klientów), lubiane przez zespół, relatywnie proste do podchwycenia i zmian. Nie ma w nim żadnych minusów, dlaczego więc piszę o tym w kontekście długu?
 
 Równolegle, mniej więcej w tym samym czasie, niezwykłą popularność zyskały szkoły programowania typu Coders Lab. Zapatrzony w swoje przekonania i umiejętności nie zauważyłem, że osoby wchodzące na rynek pracy w przeważającej większości są właśnie po takim kursie, na którym uczone były nowszego podejścia, używającego rozwiązań takich jak React, Vue czy Angular. Dla nich nasze rozwiązanie było obce, niezrozumiałe i z poprzedniej epoki.
 
-W efekcie nie jest już istotne jak dobrym — obiektywnie rzecz biorąc — był nasz wybór. W oczach naszych potencjalnych przyszłych pracowników nasze systemy są systemami legacy i nie dają im możliwości rozwoju w kierunkach, które ich motywują (a alternatyw na rynku pracy nie brakuje). Nasz zespół jest w stanie sprawnie nad nimi pracować, ale my nie możemy skalować się w takim tempie, jak tego potrzebujemy. 
+W efekcie nie jest już istotne jak dobrym — obiektywnie rzecz biorąc — był nasz wybór. W oczach naszych potencjalnych pracowników nasze systemy są systemami legacy i nie dają im możliwości rozwoju w kierunkach, które ich motywują (a alternatyw na rynku pracy nie brakuje). Nasz zespół jest w stanie sprawnie nad nimi pracować, ale my nie możemy skalować się w takim tempie, jak tego potrzebujemy. 
 
 Brak zmiany kierunku w odpowiednim momencie spowodował stworzenie długu technicznego, który po kilku latach znacząco zwiększa nam koszt i czas rekrutacji, koszt utrzymania zespołu i negatywnie wpływa na jego motywację. Dzieli również wewnętrznie organizację (na osoby ze starym oraz nowym podejściem), utrudniając przepływ wiedzy i możliwości przejścia do innych projektów.
+
+W celu poprawy tego stanu rzeczy postawiliśmy sobie jasny cel — zmienić stack projektu na bardziej nowoczesny. Teraz wiemy też, że musimy lepiej obserwować sytuację w przyszłości, aby nie popełnić dwa razy tego samego błędu.
 
 ## Wnioski
 
@@ -120,7 +118,7 @@ Całe to podsumowanie nie miałoby sensu, jeśli nie płynęłaby z niego jakaś
 
  * Używanie rynkowych standardów. Naturalnym wnioskiem z przytoczonej historii była decyzja o zmianie stacku na taki, który używa jednego z frameworków frontendowych zamiast „klasycznego” podejścia. Możliwość szybkiego skalowania zespołu jest dla nas dużo ważniejsza niż budowanie efektywności poprzez długoletnie doświadczenie w jednym rozwiązaniu.
  * Ciągła aktualizacja używanych rozwiązań. Analogicznie do kompletnej zmiany frameworków, również te istniejące już trzeba aktualizować do bieżących wersji, otwierając się na możliwości nowych bibliotek open source oraz przyciągając lepszych kandydatów do pracy.
- * Upewnienie się o odpowiednim poziomie testów jednostkowych i dokumentacji w projektach. Często przymykaliśmy na to oko, rozumiejąc, że jest to pewien kompromis. Teraz jednak szala się przeważyła i wraz z rosnącym udziałem projektów utrzymaniowych, istnienie wysokiego pokrycia testów staje się dużo ważniejsze.
+ * Upewnienie się o odpowiednim poziomie testów jednostkowych i dokumentacji w projektach. Bywało, że stawialiśmy ten element na dalszym planie, próbując pogodzić ze sobą wiele wymagań. Teraz jednak szala się przeważyła i wraz z rosnącym udziałem projektów utrzymaniowych, istnienie wysokiego pokrycia testów staje się dużo ważniejsze.
  * Wprowadzanie regularnego refactoringu, który sam w sobie nie przynosi wartości biznesowej, ale służy ograniczaniu poziomu długu na wczesnym etapie, nie pozwalając mu się rozrosnąć.
  
 Na koniec jeszcze dwa punkty, które są niejako wisienką na torcie naszych wniosków. 
@@ -129,11 +127,12 @@ Na koniec jeszcze dwa punkty, które są niejako wisienką na torcie naszych wni
 
 Przede wszystkim brakowało nam w organizacji świadomości na temat poziomu długu technicznego. Wśród programistów ta wiedza na poziomie intuicyjnym na pewno była, ale nigdy nie używaliśmy formalnych mierników, aby go określić. W skrócie — nie wiedząc jak wygląda, na pewno nie jesteśmy w stanie nim zarządzać. 
 
-Mamy więc w planach dodanie do checklist statusowych rozmowy na temat długu technicznego. Dopóki nie jesteśmy w stanie sprowadzić go do konkretnych liczb (tak jak ma to miejsce w przypadku np. rentowności projektu), opierajmy się przynajmniej na subiektywnych odczuciach.
+Dodaliśmy do checklist statusowych rozmowy na temat długu technicznego. Dopóki nie jesteśmy w stanie sprowadzić go do konkretnych liczb (tak jak ma to miejsce w przypadku np. rentowności projektu), opierajmy się przynajmniej na subiektywnych odczuciach.
 
 ### Zaangażujmy Klienta
 
-Bez świadomości i zrozumienia Klienta, w naszym trybie pracy redukcja długu technicznego byłaby walką z wiatrakami. Od teraz, wiedząc więcej o stanie naszych projektów, mamy możliwość rzetelnie informować i doradzać Klientowi odpowiedni kurs działania, ale przede wszystkim zaangażować go w decyzję. W takim modelu mamy szansę na najlepszą efektywność zwalczania długu — agencja ocenia, informuje i sugeruje, a konkretne działania planuje biznes — samemu godząc się na ewentualne ryzyka.
+Bez świadomości i zrozumienia Klienta, w naszym trybie pracy redukcja długu technicznego byłaby walką z wiatrakami. Od teraz, wiedząc więcej o stanie naszych projektów, mamy możliwość rzetelnie informować i doradzać Klientowi odpowiedni kurs działania, pozostawiając jemu ostateczną decyzję i świadomość ewentualnego ryzyka.
+
 
 ## Na zakończenie
 
