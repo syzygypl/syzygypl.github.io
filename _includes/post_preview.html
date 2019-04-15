@@ -3,7 +3,7 @@
         <h2 class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
     </header>
     <section class="post-excerpt">
-        {{ post.excerpt }} <a class="read-more" href="{{ post.url }}">Czytaj dalej &raquo;</a>
+        {{ post.excerpt }} <a class="read-more" href="{{ post.url }}">Czytaj dalej &raquo;</a>
     </section>
     <footer class="post-meta">
         {% assign authorKey = post.author|default: site.default_author %}
