@@ -1,4 +1,5 @@
 all: Gemfile
+	rm -fr _site/
 	bundle exec jekyll serve -I
 
 Gemfile:
