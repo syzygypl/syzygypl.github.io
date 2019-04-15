@@ -2,7 +2,7 @@
 title: Rób to, w co wierzysz, czyli nie do końca o podejściu data-driven
 author: puck
 layout: post
-excerpt: ~
+excerpt: Podejście data-driven często sugeruje nam rozwiązania, które wydają nam się nienaturalne i niezgodne z tym, w co wierzymy. Czy taki obiektywny wyznacznik w każdej sytuacji jest najlepszym sposobem na podejmowanie decyzji?
 categories: values
 ---
 Sporo mówi się o podejściu data-driven, w szczególności działach produktowych, ale nie tylko — np. branża HR-owa również często opiera się na metrykach. Podejście nie jest ani nowe, ani na ogólnym poziomie szczególnie skomplikowane: chodzi o podejmowanie tych działań, które będą miały najlepsze efekty, opierając się na konkretnych liczbach, a nie na przeczuciach, wcześniejszych doświadczeniach czy po prostu opiniach.
